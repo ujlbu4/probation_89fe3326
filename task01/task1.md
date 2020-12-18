@@ -24,8 +24,32 @@ Because in some rare cases the best approach would be just once manual test impl
 
 So it's great to define the goals :)
 
+###### Explore the project
+
+Before to start to run in any direction it's essential to realize where you are and what you have. 
+
+We need to understand what do have in next sections: 
+- functional requirements
+- non-functional requirements
+- architecture and integration components
+- infrastructure
+- team
+- current processes
+
+Functional reqs are unique for every feature, the main thing (for now) with them is to define the current approaches how it collects and stores. Later we will decide if we need special tools for reqs or more lightweight tools would be fine. 
+
+Non-functional reqs will help us to understand if we need more complex scenarios, tests or processes. For example do we need performance/load, fault-tolerant, security and other types of *-ility testing.
+
+If a project already exists it is required to understand current architecture, it will help to define test levels and critical paths for testing. 
+
+It's better to know what we have from infrastructure perspectives. Is it cloud solutions or our own servers. How do we configure stands — by hands or with provisioning tools. Do our engineers be ready to support and extend this. Do we have common tools for monitoring and deployments. And so on. 
+
+It is essential to speak individually with each member of a team to better know his or her tech background, what tools he or she prefer, their opinion about tests, test coverage, do they have any struggles with the current process and so on. It will help to choose the best approach to implement new stuff or change some if it will require. 
+
+And of course it is important to research current processes and make notes if there any downsides with them. 
 
 
+-----
 Upper-level Action plan usually looks likes as follow: 
 - define the goals
 - explore the project
