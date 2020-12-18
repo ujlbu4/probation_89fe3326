@@ -10,3 +10,32 @@ Imagine the following situation: you are joining a cross-functional team which b
 
 ##### Possible Approaches
 
+Usually when I join a new team or project I try to define the current situation. At first there are two essential things, first one is to define goals and other requirements for this project, second one is to have a meeting with each member and stakeholder to recognize their expectations, attitudes, experience and other flavors. 
+
+Upper-level Action plan usually looks likes as follow: 
+- define the goals
+- explore the project
+  - functional requirements
+  - non-functional requirements
+  - architecture and integration components
+  - infrastructure
+  - team
+  - current processes
+- relationship with team members
+  - developers
+  - management / stakeholders
+  - other qa engineers
+- prepare a roadmap 
+  - share with team and management
+- QA
+  - quality metrics
+  - testing levels
+  - functional requirements
+  - processes
+  - release management
+  - ci/cd
+  - infrastructure as a code
+  - monitoring
+
+
+More details on each point: ...
