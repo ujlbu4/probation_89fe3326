@@ -12,3 +12,24 @@ Document several test cases. Implement one or two automated tests based on the t
 According to task let's choose something without auth and with ability to create test data (because it often require to prepare state for test cases)
 
 For this requirements perfectly match [JSONPlaceholder](http://jsonplaceholder.typicode.com/) from [Test Data](https://github.com/public-apis/public-apis#test-data) section
+
+
+##### Test Cases
+Functional TestCases
+* /posts
+    * positive cases
+        * [ ] create post, check it exist
+        * [ ] get existed post
+        * [ ] get all posts (paging)
+        * [ ] delete post, check it deleted
+        * [ ] modify post ...
+    * negative cases
+        * [ ] get deleted post
+        * [ ] get unexist post
+        * [ ] delete unexist post
+        * [ ] requests with wrong format
+* ...
+
+
+Non-functional testcases
+- ...
