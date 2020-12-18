@@ -18,13 +18,13 @@ For this requirements perfectly match [JSONPlaceholder](http://jsonplaceholder.t
 Functional TestCases
 * /posts
     * positive cases
-        * [ ] create post, check it exist
-        * [ ] get existed post
+        * [x] create post, check it exist
+        * [x] get existed post
         * [ ] get all posts (paging)
-        * [ ] delete post, check it deleted
+        * [x] delete post, check it deleted
         * [ ] modify post ...
     * negative cases
-        * [ ] get deleted post
+        * [x] get deleted post
         * [ ] get unexist post
         * [ ] delete unexist post
         * [ ] requests with wrong format
