@@ -76,10 +76,25 @@ And of course it is important to research current processes and make notes if th
 
 ###### Common QA approaches
 
+> cross-functional team which builds a front-end application using REST APIs
+> ...
+> 2. Which process would you establish around testing new functionality?
+> 3. Which techniques or best practices in terms of code architecture and test design would you use in your automated tests?
+
+To answer on this questions more precisely we need more data, for example: 
+- Does this cross-functional team responsible only for frontend and backend develops by different team? (how we negotiate about contracts?)
+- Does it mobile or web application? (web apps you could deploy almost immediately to all users while for mobiles apps it requires few days to roll out)
+- Does this project long run or just for few days/weeks?
+- How many users will use this product? is it internal project or for external users? is it b2c or b2b product? (it will influence on limitations how we would deploy complex features)
+- Does our application is monolith or consists of microservices? (in case we also develop backend)
+- Does we have any existing ci/cd tools?
+- Functional / non-functional reqs
+- ...
+
 Let's consider regular web-based application which is use REST APIs. 
 
-At a hi-level I usually guided with Agile Testing Quadrants, which could be presented as follow:
-![image info](./pictures/agile-quadrants.png)
+I usually guided with Agile Testing Quadrants, which could be presented as follow:
+![agile quadrants](./pictures/agile-quadrants.png)
 
 The agile testing quadrants are a systematization of different types of testing. 
 
@@ -93,7 +108,8 @@ All quadrants serves to single goal — improve quality. But every activity has 
 Usually when there is no any automation it's better to start from system/e2e tests, integrate them to ci/cd, to have a safety net. Later you can start refactor your code base for simplifying writing unit tests (for example using DI, or decoupling components via appropriate patterns or contracts). Also you could add metrics and setup alerting to be aware of any issues on production. 
 
 
-So in short the maximum plan is to write auto-test in all levels (unit, integ, contract, e2e), automate ci/cd, test requirements before development is starting, define acceptance criterias for new features, have demos and kick offs for better understand what is required to develop, have usability and ux testing, automate performance and have monitoring and alerting. 
+So in short the maximum plan is to write auto-test in all levels (unit, integ, contract, e2e), embedded them to ci/cd, test requirements before development is starting, define acceptance criterias for new features, have demos and kick offs for better understand what is required to develop, have usability and ux testing, automate performance and have monitoring and alerting. 
 But depends on circumstances, resources, criticality, requirements and other things some stages could be added, changed or skipped.
 
-
+So in a graph it would imaging like this:
+![agile quadrants](./pictures/development-flow.png)
