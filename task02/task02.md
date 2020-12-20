@@ -62,3 +62,9 @@ $ python -m pytest ./
 ```
 
 Note: currently all tests are failed because tested endpoint didn't really create new posts, so it could considering as real bug in tested service
+
+
+P.S: 
+It is not a problem to dockerise tests and implement CI inplace using github-actions. 
+
+It is also not a problem to implement Alternative-Task2 in case you want to review this additional tasks.
