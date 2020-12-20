@@ -7,6 +7,8 @@ import pytest
 @pytest.fixture(scope='function')
 def fixture_existed_post():
     client = Client()
+    client.switch_off_status_code_assertion()
+
     new_post = CreatePost.generate()
     return client.create_post(new_post)
 

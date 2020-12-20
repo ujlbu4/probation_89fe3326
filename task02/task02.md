@@ -50,3 +50,15 @@ For current tests we will require 2 components: tests themselves and client whic
 `Client` class providing us simple DSL for making requests to endpoints (like `create_post`, `delete_post` and so on), encapsulating low-level requests logic (headers, urls, params and so on). For simplifying readability it would be good to extract requests and responses with simple DTO/DataClasses objects.
 
 `test_posts` contains tests for desired domain (in our case for Posts). For reusing common code for prepare test states I used `fixtures` functionality. 
+
+For assertion I choose plain assert statement due to pytest’s [has detailed assertion introspection](https://docs.pytest.org/en/stable/assert.html#assertion-introspection-details)
+
+
+To run tests we just need to activate env and start them like this:
+```sh
+$ cd task02 
+$ source venv/bin/activate
+$ python -m pytest ./
+```
+
+Note: currently all tests are failed because tested endpoint didn't really create new posts, so it could considering as real bug in tested service
