@@ -30,6 +30,23 @@ Functional TestCases
         * [ ] requests with wrong format
 * ...
 
-
 Non-functional testcases
 - ...
+
+
+##### Implementation Details
+
+For this small tests demo we will require only two dependencies: `requests` and `pytest`
+To install them locally we will run:
+```sh
+$ pip install --upgrade -r requirements.txt
+```
+
+I [freezed deps versions](requirements.txt) in requirements.txt for deterministic tests behaviour, we don't need surprises when new version of some deps will be incompatible with others or their behaviour will unexpectedly changed. 
+
+
+For current tests we will require 2 components: tests themselves and client which will simplify making requests each time.
+
+`Client` class providing us simple DSL for making requests to endpoints (like `create_post`, `delete_post` and so on), encapsulating low-level requests logic (headers, urls, params and so on). For simplifying readability it would be good to extract requests and responses with simple DTO/DataClasses objects.
+
+`test_posts` contains tests for desired domain (in our case for Posts). For reusing common code for prepare test states I used `fixtures` functionality. 
